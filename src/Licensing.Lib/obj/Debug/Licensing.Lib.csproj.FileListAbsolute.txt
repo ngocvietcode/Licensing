@@ -1,0 +1,6 @@
+C:\Users\vietbn\Downloads\Portable.Licensing-develop\src\Licensing.Lib\bin\Debug\Licensing.Lib.dll
+C:\Users\vietbn\Downloads\Portable.Licensing-develop\src\Licensing.Lib\bin\Debug\Licensing.Lib.pdb
+C:\Users\vietbn\Downloads\Portable.Licensing-develop\src\Licensing.Lib\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\vietbn\Downloads\Portable.Licensing-develop\src\Licensing.Lib\obj\Debug\Licensing.Lib.dll
+C:\Users\vietbn\Downloads\Portable.Licensing-develop\src\Licensing.Lib\obj\Debug\Licensing.Lib.pdb
+C:\Users\vietbn\Downloads\Portable.Licensing-develop\src\Licensing.Lib\obj\Debug\Licensing.Lib.csprojResolveAssemblyReference.cache
