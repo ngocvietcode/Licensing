@@ -40,6 +40,7 @@
             this.txtComputerName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lableComputerID
@@ -62,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 151);
+            this.label1.Location = new System.Drawing.Point(12, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 2;
@@ -85,11 +86,11 @@
             // 
             // txtLicense
             // 
-            this.txtLicense.Location = new System.Drawing.Point(152, 151);
+            this.txtLicense.Location = new System.Drawing.Point(152, 113);
             this.txtLicense.Multiline = true;
             this.txtLicense.Name = "txtLicense";
             this.txtLicense.ReadOnly = true;
-            this.txtLicense.Size = new System.Drawing.Size(417, 134);
+            this.txtLicense.Size = new System.Drawing.Size(306, 172);
             this.txtLicense.TabIndex = 5;
             // 
             // label2
@@ -147,11 +148,22 @@
             this.txtUserName.Size = new System.Drawing.Size(187, 20);
             this.txtUserName.TabIndex = 11;
             // 
+            // txtClose
+            // 
+            this.txtClose.Location = new System.Drawing.Point(464, 262);
+            this.txtClose.Name = "txtClose";
+            this.txtClose.Size = new System.Drawing.Size(106, 23);
+            this.txtClose.TabIndex = 12;
+            this.txtClose.Text = "Close";
+            this.txtClose.UseVisualStyleBackColor = true;
+            this.txtClose.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LicenseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 297);
+            this.Controls.Add(this.txtClose);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtComputerName);
@@ -192,5 +204,6 @@
         private System.Windows.Forms.TextBox txtComputerName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.Button txtClose;
     }
 }

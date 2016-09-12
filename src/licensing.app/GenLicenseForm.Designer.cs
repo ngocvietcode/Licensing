@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GenLicenseForm));
             this.lableComputerID = new System.Windows.Forms.Label();
             this.computerID = new System.Windows.Forms.TextBox();
             this.buttonOpen = new System.Windows.Forms.Button();
@@ -113,11 +114,11 @@
             this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.computerID);
             this.Controls.Add(this.lableComputerID);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GenLicenseForm";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Licensing";
             this.Load += new System.EventHandler(this.GenLicenseForm_Load);

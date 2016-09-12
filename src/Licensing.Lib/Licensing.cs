@@ -25,7 +25,7 @@ namespace Licensing.App
                 {
                     txtLicense.Text = File.ReadAllText(file);
                     var license = License.Load(txtLicense.Text);
-                    if (license.Validate())
+                    if (license.ValidateWithException())
                     {
                         license.SaveLicenseToFile();
                         IsValid = true;
@@ -64,7 +64,7 @@ namespace Licensing.App
                 {
                     txtLicense.Text = license.ToString();
 
-                    if (license.Validate())
+                    if (license.ValidateWithException())
                     {
                         IsValid = true;
                         labelLicenseStatus.Text = "Valid";
@@ -83,6 +83,11 @@ namespace Licensing.App
                 labelLicenseStatus.ForeColor = Color.Red;
             }
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

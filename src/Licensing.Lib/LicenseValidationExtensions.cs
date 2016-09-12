@@ -49,8 +49,18 @@ namespace Licensing.Client
 
         public static bool Validate(this License license, string publicKey = PublicKey)
         {
+            try
+            {
+                return license.VerifySignature(publicKey) && license.IsNotExprired() && license.IsForThisComputer();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public static bool ValidateWithException(this License license, string publicKey = PublicKey)
+        {
              return license.VerifySignature(publicKey) && license.IsNotExprired() && license.IsForThisComputer();
-             
         }
 
         private static bool IsNotExprired(this License license)
